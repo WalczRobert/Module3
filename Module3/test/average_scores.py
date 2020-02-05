@@ -7,27 +7,13 @@ import unittest
 class FunctionTestCase(unittest.TestCase):
     def test_average(self):
         list = [85, 90, 95]
-        fname = input("What is your first name: ")
-        lname = input("What is your last name: ")
-        age = input("How old are you: ")
+        fname = 'Robert'
+        lname = 'Edward'
+        age = 31
         print(1)
-        self.assertEqual(list, average_scores.average(list))
-        Print(2)
-        assert average_score.average() == 90
-        print(3)
+        self.assertEqual(90, average_scores.average(list, lname, fname, age))
+        
 
-
-
-
-'''class FunctionTestCase(unittest.TestCase):
-    def test_something(self):
-        list = [88, 90, 95]
-        fname = "Robert"
-        lname = "Walczak"
-        age = 45
-       
-        self.assertEqual(list, average_scores.average(list))
-'''
 
 if __name__ == '__main__':
     unittest.main()
